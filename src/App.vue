@@ -130,7 +130,7 @@ export default {
   components: { SshPre },
   created() {
     const configuration = new Configuration({
-      apiKey: "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",
+      apiKey: "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",
     });
     this.openai = new OpenAIApi(configuration);
   },
