@@ -130,7 +130,7 @@ export default {
   components: { SshPre },
   created() {
     const configuration = new Configuration({
-      apiKey: process.env.API_KEY,
+      apiKey: import.meta.env.VITE_API_KEY,
     });
     this.openai = new OpenAIApi(configuration);
   },
